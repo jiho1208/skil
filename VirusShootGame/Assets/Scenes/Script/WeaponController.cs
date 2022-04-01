@@ -14,7 +14,7 @@ public class WeaponController : MonoBehaviour
         InvokeRepeating("Fire", delay, fireRate);    
     }
 
-    void Update()
+    void Fire()
     {
         Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         GetComponent<AudioSource>().Play();
